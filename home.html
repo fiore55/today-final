@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="home">
+
+    <!-- MENÚ HAMBURGUESA -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <aside class="menu-lateral">
+        <label for="menu-toggle" class="cerrar-menu">←</label>
+        <nav>
+            <a href="#">Notas</a>
+            <a href="#">Tareas</a>
+            <a href="#">Exámenes</a>
+            <a href="#">Apuntes</a>
+            <a href="#">Countdown</a>
+            <a href="#">Recordatorios</a>
+            <a href="#">Configuración</a>
+        </nav>
+    </aside>
+
+    <!-- CALENDARIO -->
+    <section class="calendario-home">
+        <div class="top-bar">
+            <div class="barra-mes-home">Mayo</div>
+            <span class="lupa">⌕</span>
+        </div>
+        <div class="calendario-grande">
+            <div class="dias-home">
+                <h3>V</h3>
+                <p>S</p>
+                <p>D</p>
+                <p>L</p>
+                <p>M</p>
+                <p>M</p>
+                <p>J</p>
+            </div>
+            <div class="grilla-home">
+                <span class="punto naranja p1"></span>
+                <span class="punto rosa p2"></span>
+                <span class="punto naranja p3"></span>
+                <span class="punto violeta p4"></span>
+                <span class="punto celeste p5"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANEL DE TAREAS -->
+    <section class="panel-tareas">
+        <a href="perfil.html">
+            <img src="img/perfil.jpg" class="avatar-mini">
+        </a>
+        <div class="card-tarea naranja-card">
+            <h3>tp tipo</h3>
+            <div class="linea-card"></div>
+            <label>
+                <input type="checkbox">
+                presentación
+            </label>
+            <label class="tachado">
+                <input type="checkbox" checked>
+                moodboard
+            </label>
+        </div>
+        <div class="card-tarea violeta-card">
+            <h3>parcial vanguardias</h3>
+            <div class="linea-card"></div>
+            <div class="contador">
+                <div>
+                    <h2>00</h2>
+                    <p>sem</p>
+                </div>
+                <div>
+                    <h2>00</h2>
+                    <p>días</p>
+                </div>
+                <div>
+                    <h2>15</h2>
+                    <p>hrs</p>
+                </div>
+                <div>
+                    <h2>20</h2>
+                    <p>min</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD ROSA YA AGREGADA -->
+        <div class="card-tarea rosa-card">
+            <h3>moodboards recursos expresivos</h3>
+            <div class="linea-card"></div>
+            <label>
+                <input type="checkbox">
+                betsheva
+            </label>
+            <label>
+                <input type="checkbox">
+                lub dub
+            </label>
+            <label class="tachado">
+                <input type="checkbox" checked>
+                la fura
+            </label>
+        </div>
+
+        <!-- BOTÓN + -->
+        <input type="checkbox" id="abrir-agregar">
+        <label for="abrir-agregar" class="boton-mas">+</label>
+        <div class="overlay-agregar">
+            <label for="abrir-agregar" class="cerrar-overlay"></label>
+            <div class="opciones-agregar">
+                <label for="abrir-nota">Notas</label>
+                <a href="nueva-tarea.html">Tareas</a>
+                <a href="nuevo-examen.html">Exámenes</a>
+                <a href="nuevo-countdown.html">Countdown</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL NOTA GRANDE -->
+    <input type="checkbox" id="abrir-nota">
+
+    <div class="modal-nota">
+        <div class="nota-grande">
+            <h3>moodboards recursos expresivos</h3>
+            <div class="linea-nota"></div>
+            <label>
+                <input type="checkbox">
+                betsheva
+            </label>
+            <label>
+                <input type="checkbox">
+                lub dub
+            </label>
+            <label class="tachado">
+                <input type="checkbox" checked>
+                la fura
+            </label>
+        </div>
+        <label for="abrir-nota" class="check-nota">✓</label>
+    </div>
+</main>
+</body>
+</html>
